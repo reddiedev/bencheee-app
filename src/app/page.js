@@ -104,13 +104,13 @@ export default function Home() {
               src="https://thingspeak.com/channels/2207908/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Acceleration+%28z-axis%29&type=line&xaxis=Time&yaxis=Acceleration+%28g%29"></iframe>
             <iframe
               className="w-full aspect-[45/26]"
-              src="https://thingspeak.com/channels/2207908/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Acceleration+%28x-axis%29&type=line&xaxis=Time&yaxis=g"></iframe>
+              src="https://thingspeak.com/channels/2207908/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Orientation+%28x-axis%29&type=line&xaxis=Time&yaxis=Orientation (°)"></iframe>
             <iframe
               className="w-full aspect-[45/26]"
-              src="https://thingspeak.com/channels/2207908/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+              src="https://thingspeak.com/channels/2207908/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Orientation+%28y-axis%29&type=line&xaxis=Time&yaxis=Orientation (°)"></iframe>
             <iframe
               className="w-full aspect-[45/26]"
-              src="https://thingspeak.com/channels/2207908/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+              src="https://thingspeak.com/channels/2207908/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Orientation+%28z-axis%29&type=line&xaxis=Time&yaxis=Orientation (°)"></iframe>
           </div>
         </div>
       </section>
