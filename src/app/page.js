@@ -172,7 +172,8 @@ export default function Home() {
               className=""
               width={450}
               height={260}
-              src="https://thingspeak.com/channels/2187429/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=15&title=Motion+Sensor+Data&type=line&xaxis=Time&yaxis=Motion+Logic"></iframe>
+              s
+              src="https://thingspeak.com/channels/2209528/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
           </div>
           <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 mt-8 text-right">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white ">
