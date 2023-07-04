@@ -133,12 +133,12 @@ export default function Home() {
         </div>
       </section>
       <section class="">
-        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-          <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div class="gap-16 items-center py-8 px-4 mx-auto grid grid-cols-1 lg:py-16 lg:px-6 justify-center">
+          <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-screen-xl mx-auto">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
               Motion Detector: HC-SR501
             </h2>
-            <p class="mb-4">
+            <p class="mb-4 ">
               The function of the motion sensor, specifically the HC-SR501, in
               this IoT project is to monitor the presence of people in the
               printing area of the 3D printing system. Its goal is to detect any
@@ -156,12 +156,24 @@ export default function Home() {
               leading to reliable and uninterrupted 3D printing operations.
             </p>
           </div>
-          <div class="grid gap-4 mt-8 items-center justify-center">
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 w-full justify-center">
             <iframe
               className=""
               width={450}
               height={260}
-              src="https://thingspeak.com/channels/2187429/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=15&title=Motion+Sensor+Data&type=line&xaxis=Time&yaxis=Motion+Logic"></iframe>
+              src="https://thingspeak.com/channels/2187429/charts/1?bgcolor=%23ffffff&color=%23b86f23&dynamic=true&results=30&title=Motion+Sensor+Data+%5B0s%2C7s%5D&type=line&xaxis=Time&yaxis=Motion+Logic&yaxismax=1&yaxismin=0"></iframe>
+
+            <iframe
+              className=""
+              width={450}
+              height={260}
+              src="https://thingspeak.com/channels/2187429/charts/2?bgcolor=%23ffffff&color=%23b86f23&dynamic=true&results=30&title=Motion+Sensor+Data+%5B7s%2C15s%5D&type=line&xaxis=Time&yaxis=Motion+Logic"></iframe>
+
+            <iframe
+              className=""
+              width={450}
+              height={260}
+              src="https://thingspeak.com/channels/2187429/charts/3?bgcolor=%23ffffff&color=%23b86f23&dynamic=true&results=30&title=Motion+Sensor+Data&type=line&xaxis=Time&yaxis=Motion+Logic"></iframe>
           </div>
         </div>
       </section>
