@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-neutral-900 text-white">
+    <main className="flex min-h-screen min-w-screen flex-col items-center justify-center bg-neutral-900 text-white">
       <header className="w-full border-b-[1px] border-gray-200 opacity-95 backdrop-blur-md fixed top-0 bg-neutral-900">
         <nav class="px-4 lg:px-6 py-2.5  h-full">
           <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -24,18 +25,25 @@ export default function Home() {
               id="mobile-menu-2">
               <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/#accelerometer"
                     class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                    Project
-                  </a>
+                    MPU6050
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/#motion"
                     class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                    Dashboard
-                  </a>
+                    HC-SR501
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/#light"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                    BH1750
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -75,7 +83,7 @@ export default function Home() {
           Data Dashboard
         </h1>
       </section>
-      <section class="">
+      <section class="" id="accelerometer">
         <div class="gap-16 items-center py-8 px-4 mx-auto grid grid-cols-1 lg:py-16 lg:px-6 justify-center">
           <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-screen-xl self-center mx-auto">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -132,7 +140,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section class="">
+      <section class="" id="motion">
         <div class="gap-16 items-center py-8 px-4 mx-auto grid grid-cols-1 lg:py-16 lg:px-6 justify-center">
           <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-screen-xl mx-auto">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -177,11 +185,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section class="">
-        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-          <div class="grid gap-4 items-center justify-center">
+      <section class="" id="light">
+        <div class="gap-16 items-center md:py-8 md:px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+          <div class="grid w-full md:gap-4 items-center justify-center overflow-scroll">
             <iframe
-              className=""
+              className="overflow-scroll"
               width={450}
               height={260}
               s
